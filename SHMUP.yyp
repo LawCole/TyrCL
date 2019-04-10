@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "6e766c59-89d9-40e7-a79f-034413480784",
+            "Value": {
+                "id": "5eaf847c-ad1b-44ab-9aaa-d96715a9f1d8",
+                "resourcePath": "scripts\\apply_deltatime\\apply_deltatime.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7051bccb-41bd-48df-b0b3-6ec2370653a4",
             "Value": {
                 "id": "5e6e0e8a-3e64-4a4e-bc80-88e36a83e454",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "cc7872e8-895e-41af-bda9-a0604ce964aa",
+            "Value": {
+                "id": "e1c23ee8-f2e2-4f94-a7be-a71d20ff86be",
+                "resourcePath": "objects\\obj_DT\\obj_DT.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "3f1fb86f-ed7a-4d82-b4f3-65e2a845bdf2",
@@ -367,7 +383,8 @@
         "66a5ceae-9a35-4266-a4a8-f5eb824b38d6",
         "2a5c6232-cd74-4fa8-b153-07befa77a012",
         "b54f8910-9b47-4015-89e3-884f86e2022a",
-        "0fe7ff0e-8162-43d1-b3b0-48fe9550805a"
+        "0fe7ff0e-8162-43d1-b3b0-48fe9550805a",
+        "6e766c59-89d9-40e7-a79f-034413480784"
     ],
     "tutorial": ""
 }
