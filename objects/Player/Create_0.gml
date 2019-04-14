@@ -10,14 +10,15 @@ vspd = 0;
 bounce = false;
 
 //SPRITE VARIABLES
-image_xscale = image_xscale*3;
-image_yscale = image_yscale*3;
+image_xscale = image_xscale*2;
+image_yscale = image_yscale*2;
 image_index = 2;
 image_speed = 0;
 
 //SHIP ATTRIBUTES
 reload_speed = 5;
 
+max_energy = 100;
 energy = 100;
 en_regen = 1.25;
 en_cost = 20;
@@ -26,6 +27,7 @@ shield = 40;
 sh_regen = 20;
 max_armor = 100;
 armor = 60;
+
 
 //ARMOR SYSTEM VARIABLES
 

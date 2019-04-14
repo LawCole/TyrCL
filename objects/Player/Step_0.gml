@@ -2,6 +2,11 @@
 get_input();
 script_execute(state);
 
+//CALCULATE % to draw bars
+armor_PC = (armor/max_armor)*100 ;
+shield_PC = (shield/max_shield)*100;
+energy_PC = (energy/max_energy)*100;
+
 //attack
 
 if (z_key) || (left_mouse) && (state != death_state) { 
@@ -36,9 +41,9 @@ if regen_tick_rate <= 0 {
 regen_tick_rate = room_speed;
 }
 
-if energy < 100 {
+if energy < max_energy {
 	energy += en_regen;
-	energy = clamp(energy,0,100);
+	energy = clamp(energy,0,max_energy);
 }
 
 //DAMAGE STUFF
