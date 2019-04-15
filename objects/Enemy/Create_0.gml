@@ -8,3 +8,7 @@ bullet_damage = 25;
 //TEMPORARY SPRITE SCALING
 image_xscale = image_xscale *2;
 image_yscale = image_yscale *2;
+
+//flash shader variables
+flashAlpha = 0;
+flashColor = c_white;

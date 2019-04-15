@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-y -= apply_deltatime(bullet_speed);
+y -= bullet_speed;
 
 //bullet_linger -=1;
 

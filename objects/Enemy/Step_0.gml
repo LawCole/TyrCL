@@ -16,8 +16,12 @@ if enemy_hp <= 0 {
 }
 
 
-
 //DEBUG
 //INCREASE OR DECREASE BULLET DAMAGE BY 20 WITH PG_UP/DOWN
 if keyboard_check_released(vk_pageup) { bullet_damage += 20; }
 if keyboard_check_released(vk_pagedown) { bullet_damage -= 20; }
+
+//SHADER STUFF
+if (flashAlpha > 0){
+	flashAlpha -= 0.1;
+}
