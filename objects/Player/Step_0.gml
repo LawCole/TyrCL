@@ -14,7 +14,8 @@ if (z_key) || (left_mouse) && (state != death_state) {
 	} else { attack_key = false;}
 
 if (attack_key) && (attackstate == 0) && (energy >= en_cost) {
-	instance_create_layer(x,y,"Instances",Bullet);
+	var shot_spawned = instance_create_layer(x,y,"Instances",Bullet);
+	shot_spawned.bullet_damage = bullet_damage;
 	attackstate = 60;
 	energy -= en_cost;
 	}
@@ -33,7 +34,7 @@ if regen_tick_rate <= 0 {
 		if energy >= sh_regen{
 			shield += sh_regen; 
 		} else { 
-			shield -= energy;
+			shield += energy;
 			}
 	shield = clamp(shield,0,max_shield);
 	energy -= sh_regen;
