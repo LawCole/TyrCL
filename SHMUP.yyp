@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "089132ae-475e-42b7-970d-d2f9d6112ffb",
+            "Value": {
+                "id": "bf40e2e8-9582-49ff-b09a-b8c42cd77b79",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0f37ace8-a3ff-4511-ae91-8c763fb9adb1",
             "Value": {
                 "id": "98bd82b2-4b76-4f18-89e8-c7105ff227f0",
@@ -119,6 +127,14 @@
             }
         },
         {
+            "Key": "4aa8abdd-3a14-424d-aa5d-b5e5c4e9d858",
+            "Value": {
+                "id": "7bbe36c4-db35-499f-9780-1abd22bcdc58",
+                "resourcePath": "views\\4aa8abdd-3a14-424d-aa5d-b5e5c4e9d858.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4aacd868-a859-4994-abe5-b22b7001bc3f",
             "Value": {
                 "id": "6b5185c6-9970-43d1-9727-443d6bb2f512",
@@ -164,6 +180,14 @@
                 "id": "0a9b4b08-dc7a-4539-b5dd-cae24f6af61f",
                 "resourcePath": "scripts\\apply_friction\\apply_friction.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "67130b8b-b136-4ea6-a52e-ba5bfdeecb2f",
+            "Value": {
+                "id": "0d241b32-3c2d-48fa-bb44-531d1b29bbc4",
+                "resourcePath": "rooms\\rm_startscreen\\rm_startscreen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -231,6 +255,14 @@
             }
         },
         {
+            "Key": "8b88cf8f-881a-448d-9dba-ef15cb136ad7",
+            "Value": {
+                "id": "8041028e-1d1b-44a2-b238-a67dd46c063c",
+                "resourcePath": "rooms\\rm_levelselect\\rm_levelselect.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8bd007dc-fec5-4095-af2b-d2a9b54c583f",
             "Value": {
                 "id": "aeadea4d-e9a8-4d4c-b85f-63101eed6c8e",
@@ -244,6 +276,14 @@
                 "id": "a04c9ba9-8d22-42d0-86a7-9330ffbca5c2",
                 "resourcePath": "objects\\Bullet\\Bullet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "94f4d86a-cf54-4d24-8362-8d754a1561a8",
+            "Value": {
+                "id": "2378e702-1acd-4178-bcd7-799ce02921fa",
+                "resourcePath": "views\\94f4d86a-cf54-4d24-8362-8d754a1561a8.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -303,11 +343,27 @@
             }
         },
         {
+            "Key": "b1e9b50c-951b-4cfe-b8ce-992c7db3de72",
+            "Value": {
+                "id": "54599350-4d66-4c43-8f72-c783ec439e0d",
+                "resourcePath": "objects\\obj_mainmenu\\obj_mainmenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b54f8910-9b47-4015-89e3-884f86e2022a",
             "Value": {
                 "id": "b1527b7c-0d16-45ed-8859-7765d779f577",
                 "resourcePath": "scripts\\is_out_of_bounds\\is_out_of_bounds.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b9ab6bcf-796d-46b5-aac9-5da8516f3e8b",
+            "Value": {
+                "id": "243f3852-549b-4812-86b8-71ed186cefec",
+                "resourcePath": "objects\\obj_display_manager\\obj_display_manager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -380,6 +436,14 @@
                 "id": "3f1fb86f-ed7a-4d82-b4f3-65e2a845bdf2",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d176c38a-9794-4d03-8287-31a1c98debf2",
+            "Value": {
+                "id": "692e61f7-9c3f-49e6-a343-bac7846762c7",
+                "resourcePath": "rooms\\_display_init\\_display_init.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

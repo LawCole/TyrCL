@@ -6,6 +6,7 @@ up_release = keyboard_check_released(vk_up);
 down = keyboard_check(vk_down);
 
 z_key = keyboard_check(ord("Z"));
+enter = keyboard_check(vk_enter);
 
 left_mouse = mouse_check_button(mb_left);
 

@@ -10,8 +10,8 @@ vspd = 0;
 //bounce = false;
 
 //SPRITE VARIABLES
-image_xscale = image_xscale*2;
-image_yscale = image_yscale*2;
+image_xscale = image_xscale*1;
+image_yscale = image_yscale*1;
 image_index = 2;
 image_speed = 0;
 
@@ -23,7 +23,7 @@ bullet_damage = 10;
 
 max_energy = 900;
 energy = 100;
-en_regen = 10;
+en_regen = 5;
 en_cost = 80;
 max_shield = 40;
 shield = max_shield/2;
@@ -44,3 +44,8 @@ get_input();
 
 //DEBUG
 global.bulletcount = 0;
+
+//CAMERA STUFF (maybe move to own object eventually)
+
+//view_zoom = 1;
+//view_max_zoom = 10;

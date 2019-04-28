@@ -1,4 +1,7 @@
 /// @description DEBUG
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
 draw_text(10,10,"Bullet count: " + string(global.bulletcount));
 //draw_text(10,30,"ENERGY:" + string(ceil(energy)));
 //draw_text(10,50,"SHIELD:" + string(shield));

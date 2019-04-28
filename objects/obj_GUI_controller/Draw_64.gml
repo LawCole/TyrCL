@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//draw_rectangle_color(540,0,720,360,c_white,c_white,c_white,c_white,false);
+draw_rectangle_color(display_get_gui_width()*0.75,0,display_get_gui_width(),display_get_gui_height(),c_gray,c_gray,c_white,c_white,false);
