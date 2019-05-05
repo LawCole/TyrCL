@@ -6,30 +6,29 @@ acc = 0.5;
 fric = 0.25;
 hspd = 0;
 vspd = 0;
-//grav = 0.8;
-//bounce = false;
 
 //SPRITE VARIABLES
-image_xscale = image_xscale*1;
-image_yscale = image_yscale*1;
 image_index = 2;
 image_speed = 0;
 
 //SHIP-PILOT ATTRIBUTES
-pilot = "Raz";
-reload_speed = 5;
+initialize_weapons_pilots();
+initialize_pilots_attributes();
+//pilot = "Raz";
+//reload_speed = 5;
 
-bullet_damage = 10;
+//weapon_LV = 1;
+//bullet_damage = 10;
 
-max_energy = 900;
-energy = 100;
-en_regen = 5;
-en_cost = 80;
-max_shield = 40;
-shield = max_shield/2;
-sh_regen = 20;
-max_armor = 100;
-armor = 60;
+//max_energy = 900;
+//energy = 100;
+//en_regen = 5;
+//en_cost = 80;
+//max_shield = 40;
+//shield = max_shield/2;
+//sh_regen = 20;
+//max_armor = 100;
+//armor = 60;
 
 //ARMOR SYSTEM VARIABLES
 damage_buffer = 0;

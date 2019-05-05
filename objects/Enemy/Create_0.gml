@@ -4,6 +4,8 @@
 shot_timer = 90;
 enemy_hp = 100;
 bullet_damage = 25;
+credit_worth = 100;
+
 
 //TEMPORARY SPRITE SCALING
 image_xscale = image_xscale *1;

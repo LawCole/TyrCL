@@ -4,9 +4,7 @@
 bullet_damage = 10;
 bullet_speed = 5;
 bullet_linger = 90;
-
-image_xscale = image_xscale*0.5;
-image_yscale = image_yscale*0.5;
+bullet_angle = 90;
 
 if global.bulletcount = undefined {
  global.bulletcount = 0;

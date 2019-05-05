@@ -11,3 +11,6 @@ draw_healthbar(10,45,110,55,shield_PC,c_black,c_teal,c_blue,0,true,false);
 draw_healthbar(10,60,110,70,armor_PC,c_black,c_maroon,c_silver,0,true,false);
 draw_text(10,75,"hspd:" + string(hspd));
 draw_text(10,95,"vspd:" + string(vspd));
+draw_text(10,115,"weapon LV:" + string(weapon_LV));
+draw_text(10,135,"CREDIT$: " + string(gold));
+draw_text(10,155,"Pilot: " + string(pilot));

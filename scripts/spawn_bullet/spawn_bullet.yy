@@ -1,8 +1,8 @@
 {
-    "id": "c4437dcc-0e0e-4d5f-b8c6-a38c8f2867fb",
+    "id": "bc427bb6-8663-4856-935a-24bdaa70838d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "initialize_pilots",
+    "name": "spawn_bullet",
     "IsCompatibility": false,
     "IsDnD": false
 }

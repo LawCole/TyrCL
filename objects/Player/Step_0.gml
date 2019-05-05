@@ -7,24 +7,32 @@ armor_PC = (armor/max_armor)*100 ;
 shield_PC = (shield/max_shield)*100;
 energy_PC = (energy/max_energy)*100;
 
-//attack
-
+//ATTACK
+weapon_LV = clamp(weapon_LV,1,11);
+//disable attack if player is dead
 if (z_key) || (left_mouse) && (state != death_state) { 
 	attack_key = true; 
 	} else { attack_key = false;}
 
 if (attack_key) && (attackstate == 0) && (energy >= en_cost) {
-	var shot_spawned = instance_create_layer(x,y,"Instances",Bullet);
-	shot_spawned.bullet_damage = bullet_damage;
+	fire_weapon()
+	//spread_angle = 90/(weapon_LV);
+	//for (var i = 1; i < weapon_LV+1; i++)
+	//	{
+	//	var angle = i*spread_angle;
+	//	var bullet_spawn = instance_create_layer(x,y,"Instances",Bullet);
+	//	bullet_spawn.bullet_angle = angle;
+	//	bullet_spawn.bullet_damage = bullet_damage;
+	//	}
 	attackstate = 60;
 	energy -= en_cost;
 	}
-	
+
+//firing cooldown	
 if (attackstate !=0) {
  attackstate -= reload_speed;
  if attackstate <0 {attackstate = 0;}
 }
-
 
 //ENERGY REGEN STUFF
 
