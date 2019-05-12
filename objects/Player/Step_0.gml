@@ -24,8 +24,9 @@ if (attack_key) && (attackstate == 0) && (energy >= en_cost) {
 	//	bullet_spawn.bullet_angle = angle;
 	//	bullet_spawn.bullet_damage = bullet_damage;
 	//	}
-	attackstate = 60;
-	energy -= en_cost;
+	attackstate = room_speed;
+	energy -= en_cost * (1 + weapon_LV/11);
+	energy = clamp(energy,0,max_energy);
 	}
 
 //firing cooldown	
@@ -34,8 +35,7 @@ if (attackstate !=0) {
  if attackstate <0 {attackstate = 0;}
 }
 
-//ENERGY REGEN STUFF
-
+//SHIELD REGEN
 regen_tick_rate -=1;
 if regen_tick_rate <= 0 {
 	if shield < max_shield { 
@@ -46,12 +46,16 @@ if regen_tick_rate <= 0 {
 			}
 	shield = clamp(shield,0,max_shield);
 	energy -= sh_regen;
+	energy = clamp(energy,0,max_energy)
 	}
 regen_tick_rate = room_speed;
 }
 
+//ENERGY REGEN
 if energy < max_energy {
-	energy += en_regen;
+	if energy >= overheat_threshold {
+		energy += en_regen;
+	} else {energy += en_regen/2;}
 	energy = clamp(energy,0,max_energy);
 }
 

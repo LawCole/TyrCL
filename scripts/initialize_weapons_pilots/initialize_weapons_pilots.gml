@@ -17,7 +17,8 @@ enum bullet_type {
 	pellet,
 	bubble,
 	rocket,
-	wave
+	wave,
+	mine
 }
 enum bullet_modifier1 {
 	none,
@@ -36,7 +37,8 @@ enum bullet_modifier2 {
 enum bullet_modifier3 {
 	none,
 	speedup,
-	slowdown
+	slowdown,
+	relative_v
 }
 enum pilot_bonus {
 	none,
@@ -49,33 +51,48 @@ enum pilot_bonus {
 
 #endregion
 
-pilot = 2;
+pilot = global.pilotselected;
 pilot_bonus = 0;
 gold = 10000;
 
 //SHIP variables
+	//ENERGY
 max_energy = 900;
 energy = 100;
-en_regen_multiplier = 0;
-en_regen = 10 * (1 + en_regen_multiplier/100);
-en_cost_multiplier = 0;
-en_cost = 80 * (1 + en_cost_multiplier/100);
 
+base_en_regen = 10;
+en_regen_multiplier = 0;
+
+base_en_cost = 80;
+en_cost_multiplier = 0;
+
+overheat_threshold = ceil(max_energy/3);
+
+	//SHIELD
 max_shield = 40;
 shield = max_shield/2;
 sh_regen_multiplier = 0;
-sh_regen = 20 * (1 + sh_regen_multiplier/100);
+base_sh_regen = 20;
 
+	//ARMOR
 max_armor = 100;
 armor_multiplier = 0;
-armor = 60 * (1 + armor_multiplier/100);
+base_armor = 60;
 
 //WEAPON variables
-reload_speed = 5;
-bullet_damage = 10;
+base_reload_speed = 5;
+reload_speed_multiplier = 0;
+
+base_damage = 10;
+damage_multiplier = 0;
+
+base_bullet_speed = 5 
+bullet_speed_multiplier = 0;
+
 weapon_LV = 1;
 bullet_type = bullet_type.standard;
 bullet_modifier1 = bullet_modifier1.none;
 bullet_modifier2 = bullet_modifier2.none;
-bullet_modifier3 = bullet_modifier3.none;
+bullet_modifier3 = bullet_modifier3.speedup;
 pilot_bonus = pilot_bonus.none;
+shop_multiplier = 0;

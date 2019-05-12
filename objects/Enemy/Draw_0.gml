@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+draw_healthbar(x-sprite_width/2,(y-sprite_width/2)-5,x+sprite_width/2,y-sprite_width/2,enemy_hp,c_black,c_yellow,c_orange,0,true,false);
+
 draw_self();
 
 

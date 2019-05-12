@@ -1,6 +1,7 @@
 /// @description set up player variables
 
 //MOVEMENT VARIALBES
+max_speed = 15;
 spd = 5;
 acc = 0.5;
 fric = 0.25;
@@ -12,23 +13,21 @@ image_index = 2;
 image_speed = 0;
 
 //SHIP-PILOT ATTRIBUTES
+//SET UP ALL THE NECESSARY VARIABLES
 initialize_weapons_pilots();
+//INITIALIZE PILOT MODIFIERS
 initialize_pilots_attributes();
-//pilot = "Raz";
-//reload_speed = 5;
+//INITIALIZE WEAPON MODIFIERS
+initialize_weapon_attibutes();
 
-//weapon_LV = 1;
-//bullet_damage = 10;
-
-//max_energy = 900;
-//energy = 100;
-//en_regen = 5;
-//en_cost = 80;
-//max_shield = 40;
-//shield = max_shield/2;
-//sh_regen = 20;
-//max_armor = 100;
-//armor = 60;
+//RECALCULATE ATTRIBUTES AFTER LOADING PILOT ATTRIBUTES 
+bullet_damage = ceil(base_damage * (1 + damage_multiplier/100));
+reload_speed = round(base_reload_speed * (1 + reload_speed_multiplier/100));
+bullet_speed = round(base_bullet_speed * (1 + bullet_speed_multiplier/100));
+en_regen = round(base_en_regen * (1 + en_regen_multiplier/100));
+en_cost = ceil(base_en_cost * (1 + en_cost_multiplier/100));
+sh_regen = round(base_sh_regen * (1 + sh_regen_multiplier/100));
+armor = ceil(base_armor * (1 + armor_multiplier/100));
 
 //ARMOR SYSTEM VARIABLES
 damage_buffer = 0;

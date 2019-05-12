@@ -9,7 +9,8 @@
         "cc7872e8-895e-41af-bda9-a0604ce964aa",
         "18a44671-4bb3-4236-9b7b-f6670aef65c0",
         "b9ab6bcf-796d-46b5-aac9-5da8516f3e8b",
-        "089132ae-475e-42b7-970d-d2f9d6112ffb"
+        "089132ae-475e-42b7-970d-d2f9d6112ffb",
+        "65d7a99e-5a34-4805-87e5-d178553cd476"
     ],
     "filterType": "GMObject",
     "folderName": "TECHNICAL OBJECTS",

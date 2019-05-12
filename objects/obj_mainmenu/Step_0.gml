@@ -5,7 +5,7 @@ get_input();
 switch (selected_value)
 	{
 	case 0:
-		if enter {room_goto(room0);}
+		if enter {room_goto(rm_pilotselect);}
 		break;
 	case 1:
 		break;
