@@ -7,9 +7,10 @@ down = keyboard_check(vk_down);
 
 z_key = keyboard_check(ord("Z"));
 enter = keyboard_check(vk_enter);
+shift = keyboard_check(vk_shift);
 
 left_mouse = mouse_check_button(mb_left);
-
+middle_mouse = mouse_check_button(mb_middle);
 //override controls for gamepad
 //var gp_id = 0;
 //var thresh = .5;

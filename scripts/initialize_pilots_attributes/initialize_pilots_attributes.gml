@@ -4,12 +4,11 @@ switch (pilot)
 		en_cost_multiplier += -10;
 		break;
 	case pilot.Raz:
-		sh_regen_multiplier += 10;
-		//TODO: sh_regen_efficiency = 5;
+		regen_tick_rate_multiplier += -10;
 		break;
 	case pilot.Henrik:
 		armor_multiplier += -25;
-		sh_regen_multiplier += 25;
+		regen_tick_rate_multiplier += -35;
 		pilot_bonus = pilot_bonus.repel;
 		break;
 	case pilot.Bunsen:
@@ -29,7 +28,7 @@ switch (pilot)
 		break;
 	case pilot.Boss:
 		en_cost_multiplier += -25;
-		sh_regen_multiplier += 25;
+		regen_tick_rate_multiplier += -25;
 		armor_multiplier += 25;
 		pilot_bonus = pilot_bonus.boss_charge;
 		break;

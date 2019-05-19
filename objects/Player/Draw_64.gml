@@ -38,3 +38,4 @@ switch (pilot) {
         break;
 }
 draw_text(10,155,"Pilot: " + string(pilotname));
+draw_text(10,175,"sh_regen_tick: "+ string(regen_rate));

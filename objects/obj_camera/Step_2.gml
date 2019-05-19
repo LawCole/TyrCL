@@ -3,10 +3,10 @@
 
 camera_set_view_size(view,view_width,view_height);
 
-if(instance_exists(Player))
+if(instance_exists(obj_scroll))
 {
-	var _x = clamp(Player.x-view_width/2,0,room_width-view_width);
-	var _y = clamp(Player.y-view_height/2,0,room_height-view_height);
+	var _x = clamp(obj_scroll.x-view_width/2,0,room_width-view_width);
+	var _y = clamp(obj_scroll.y-view_height/2,0,room_height-view_height);
 
 	var _cur_x = camera_get_view_x(view);
 	var _cur_y = camera_get_view_y(view);

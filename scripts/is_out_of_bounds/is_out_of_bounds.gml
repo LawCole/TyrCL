@@ -7,3 +7,5 @@ var vh = camera_get_view_height(view_camera[0]);
 if(object.x >= 0) && (object.x <= vw) && (object.y >= 0) && (object.y <= vh) {
       return false;
     } else return true;
+	
+	

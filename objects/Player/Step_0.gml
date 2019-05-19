@@ -14,19 +14,19 @@ if (z_key) || (left_mouse) && (state != death_state) {
 	attack_key = true; 
 	} else { attack_key = false;}
 
+if (shift) || (middle_mouse) && (state != death_state) { 
+	sp_attack_key = true; 
+	} else { sp_attack_key = false;}
+
 if (attack_key) && (attackstate == 0) && (energy >= en_cost) {
 	fire_weapon()
-	//spread_angle = 90/(weapon_LV);
-	//for (var i = 1; i < weapon_LV+1; i++)
-	//	{
-	//	var angle = i*spread_angle;
-	//	var bullet_spawn = instance_create_layer(x,y,"Instances",Bullet);
-	//	bullet_spawn.bullet_angle = angle;
-	//	bullet_spawn.bullet_damage = bullet_damage;
-	//	}
 	attackstate = room_speed;
 	energy -= en_cost * (1 + weapon_LV/11);
 	energy = clamp(energy,0,max_energy);
+	}
+	
+if (sp_attack_key) {
+	fire_sp_weapon()
 	}
 
 //firing cooldown	
@@ -36,19 +36,19 @@ if (attackstate !=0) {
 }
 
 //SHIELD REGEN
-regen_tick_rate -=1;
-if regen_tick_rate <= 0 {
+regen_rate -=1;
+if regen_rate <= 0 {
 	if shield < max_shield { 
 		if energy >= sh_regen{
 			shield += sh_regen; 
 		} else { 
-			shield += energy;
+			shield += sh_regen;
 			}
 	shield = clamp(shield,0,max_shield);
-	energy -= sh_regen;
+	energy -= max_energy/9;
 	energy = clamp(energy,0,max_energy)
 	}
-regen_tick_rate = room_speed;
+regen_rate = regen_tick_rate;
 }
 
 //ENERGY REGEN
@@ -71,12 +71,13 @@ if damage_buffer > 0 {
 	shield = 0;
 	}
 	damage_buffer = 0;
+	//shield regen cooldown resets and takes longer when you get hit
+	regen_rate = ceil(regen_tick_rate*1.5);
 }
 
 if armor <= 0 { 
 	//DEATH
 	state = death_state;
-	
 	}
 
 //SPRITE STUFF (for now)

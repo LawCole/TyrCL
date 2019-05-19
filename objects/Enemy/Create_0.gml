@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-shot_timer = 90;
+base_shot_timer = 30;
+shot_timer = base_shot_timer;
 enemy_hp = 100;
-bullet_damage = 25;
+bullet_damage = 2;
 credit_worth = 100;
 
 //TEMPORARY SPRITE SCALING

@@ -28,14 +28,17 @@ en_regen = round(base_en_regen * (1 + en_regen_multiplier/100));
 en_cost = ceil(base_en_cost * (1 + en_cost_multiplier/100));
 sh_regen = round(base_sh_regen * (1 + sh_regen_multiplier/100));
 armor = ceil(base_armor * (1 + armor_multiplier/100));
+regen_tick_rate = ceil(base_regen_tick_rate * (1 + regen_tick_rate_multiplier/100));
 
 //ARMOR SYSTEM VARIABLES
 damage_buffer = 0;
-regen_tick_rate = room_speed;
+regen_rate = regen_tick_rate;
 
 //Player states
 state =  move_mouse;
 attackstate = 0;
+attack_key = false;
+sp_attack_key = false;
 
 //get the input
 get_input();

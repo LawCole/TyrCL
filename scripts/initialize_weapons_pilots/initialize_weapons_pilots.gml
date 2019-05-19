@@ -69,17 +69,19 @@ en_cost_multiplier = 0;
 overheat_threshold = ceil(max_energy/3);
 
 	//SHIELD
-max_shield = 40;
-shield = max_shield/2;
+max_shield = 10;
+shield = 1;
 sh_regen_multiplier = 0;
-base_sh_regen = 20;
+base_sh_regen = 1;
+base_regen_tick_rate = room_speed;
+regen_tick_rate_multiplier = 0;
 
 	//ARMOR
-max_armor = 100;
+max_armor = 10;
 armor_multiplier = 0;
-base_armor = 60;
+base_armor = 5;
 
-//WEAPON variables
+	//WEAPON variables
 base_reload_speed = 5;
 reload_speed_multiplier = 0;
 
@@ -90,7 +92,7 @@ base_bullet_speed = 5
 bullet_speed_multiplier = 0;
 
 weapon_LV = 1;
-bullet_type = bullet_type.standard;
+bullet_type = bullet_type.bubble;
 bullet_modifier1 = bullet_modifier1.none;
 bullet_modifier2 = bullet_modifier2.none;
 bullet_modifier3 = bullet_modifier3.speedup;
