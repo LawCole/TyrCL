@@ -73,6 +73,7 @@ max_shield = 10;
 shield = 1;
 sh_regen_multiplier = 0;
 base_sh_regen = 1;
+sh_regen_cost = 100;
 base_regen_tick_rate = room_speed;
 regen_tick_rate_multiplier = 0;
 

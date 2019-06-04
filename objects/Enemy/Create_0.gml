@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-base_shot_timer = 30;
+base_shot_timer = 60;
 shot_timer = base_shot_timer;
 enemy_hp = 100;
 bullet_damage = 2;

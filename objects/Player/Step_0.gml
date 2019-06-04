@@ -39,13 +39,13 @@ if (attackstate !=0) {
 regen_rate -=1;
 if regen_rate <= 0 {
 	if shield < max_shield { 
-		if energy >= sh_regen{
+		if energy >= sh_regen_cost{
 			shield += sh_regen; 
+			energy -= sh_regen_cost;
 		} else { 
-			shield += sh_regen;
+			//NOTHING
 			}
 	shield = clamp(shield,0,max_shield);
-	energy -= max_energy/9;
 	energy = clamp(energy,0,max_energy)
 	}
 regen_rate = regen_tick_rate;

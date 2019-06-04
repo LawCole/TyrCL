@@ -9,3 +9,10 @@ if(object.x >= 0) && (object.x <= vw) && (object.y >= 0) && (object.y <= vh) {
     } else return true;
 	
 	
+//var vx = camera_get_view_x(view_camera[0]);
+//var vy = camera_get_view_y(view_camera[0]);
+
+
+//if(object.x >= 0) && (object.x <= vx) && (object.y >= 0) && (object.y <= vy) {
+//      return false;
+//    } else return true;
