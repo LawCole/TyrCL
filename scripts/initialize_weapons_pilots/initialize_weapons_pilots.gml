@@ -50,7 +50,6 @@ enum pilot_bonus {
 }
 
 #endregion
-
 pilot = global.pilotselected;
 pilot_bonus = 0;
 gold = 10000;

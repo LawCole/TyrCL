@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "938e236a-946b-4f2d-910f-18d28c06dd74",
+            "Value": {
+                "id": "c8103d25-e990-48ff-9e0e-e7d4435136ca",
+                "resourcePath": "objects\\obj_initialize_globals\\obj_initialize_globals.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "943fa372-3ca7-454d-a49a-e5bcd13214a7",
             "Value": {
                 "id": "a04c9ba9-8d22-42d0-86a7-9330ffbca5c2",
@@ -508,6 +516,14 @@
                 "id": "cdc51596-57ee-48dd-999d-7f3b786d9a6f",
                 "resourcePath": "scripts\\initialize_weapon_attibutes\\initialize_weapon_attibutes.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9e992799-d0f2-4d8e-95f1-28303740a4fe",
+            "Value": {
+                "id": "2a1d4313-012e-4543-ba4f-f608b6cd4fc9",
+                "resourcePath": "objects\\obj_enemy_manager\\obj_enemy_manager.yy",
+                "resourceType": "GMObject"
             }
         },
         {

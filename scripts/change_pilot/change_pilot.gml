@@ -7,4 +7,5 @@ switch(argument0){
 	case 4: global.pilotselected = pilot.Harriet; break;
 	case 5: global.pilotselected = pilot.Siska; break;
 	case 6: global.pilotselected = pilot.Boss; break;
+	default: global.pilotselected = pilot.Misha; break;
 }

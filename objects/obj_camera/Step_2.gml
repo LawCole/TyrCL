@@ -12,8 +12,8 @@ if(instance_exists(obj_scroll))
 	var _cur_y = camera_get_view_y(view);
 	
 	var _spd =.1;
-	camera_set_view_pos(view,
-		lerp(_cur_x, _x, _spd),
-		lerp(_cur_y, _y, _spd));
+	camera_set_view_pos(view, _x, _y);
+		//floor(lerp(_cur_x, _x, _spd)),
+		//floor(lerp(_cur_y, _y, _spd)));
 	
 }

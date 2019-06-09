@@ -11,14 +11,14 @@ if shot_timer <= 0 {
 	}
 	
 if enemy_hp <= 0 {
-	TEMP_respawn.respawn_timer = room_speed*2;
+	//TEMP_respawn.respawn_timer = room_speed*2;
 	instance_destroy(self);
 	Player.gold += credit_worth;
 }
 
 if instance_exists(self) {
 var checkOOB = is_out_of_bounds(self);
-if checkOOB == true {instance_destroy(self);}
+if checkOOB == true {instance_deactivate_object(self);}
 }
 
 //DEBUG

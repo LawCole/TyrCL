@@ -39,3 +39,6 @@ switch (pilot) {
 }
 draw_text(10,155,"Pilot: " + string(pilotname));
 draw_text(10,175,"sh_regen_tick: "+ string(regen_rate));
+if instance_exists(obj_camera){
+	draw_text(10,195,"camera_y: "+ string(camera_get_view_y(view)));
+}

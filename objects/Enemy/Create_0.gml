@@ -3,7 +3,7 @@
 
 base_shot_timer = 60;
 shot_timer = base_shot_timer;
-enemy_hp = 100;
+enemy_hp = 40;
 bullet_damage = 2;
 credit_worth = 100;
 
