@@ -1,3 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description SET FPS TO 60
+
 room_speed = 60;

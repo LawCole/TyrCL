@@ -13,12 +13,10 @@ switch (bullet_type)
 		bullet_speed_multiplier -= 25;
 		en_cost_multiplier += 25;
 		bullet_sprite = spr_bubblebullet;
-		bullet_modifier1 = bullet_modifier1.split;
 		break;
 	case bullet_type.wave:
 		damage_multiplier -= 20; 
 		bullet_sprite = spr_wavebullet;
-		bullet_modifier1 = bullet_modifier1.pierce;
 		break;
 	default:
 		bullet_sprite = spr_defaultbullet;

@@ -58,9 +58,15 @@ ds_menu_audio = create_menu_page(
 
 ds_pilot_page = create_menu_page(
 	["CHOOSE YOUR PILOT:",	menu_element_type.shift,	change_pilot,	0,	["Misha","Raz","Henrik","Bunsen","Siska","Harriet","???"]],
+	["CHOOSE BULLET TYPE:",	menu_element_type.shift,	change_bullet_type,	0,	["Standard","Pellet","Bubble","Wave"]],	
+	["CHOOSE MODIFIER 1:",	menu_element_type.shift,	change_bullet_attribute1,	0,	["NONE","Piercing","Split"]],	
+	["CHOOSE MODIFIER 2:",	menu_element_type.shift,	change_bullet_attribute2,	0,	["NONE"]],	
+	["CHOOSE MODIFIER 3:",	menu_element_type.shift,	change_bullet_attribute3,	0,	["NONE","Speedup","Slowdown"]],	
 	["PLAY",				menu_element_type.script_runner,	start_game],
 	["BACK",				menu_element_type.page_transfer,	menu_page.main],
 )
+
+
 
 ds_menu_controls = create_menu_page(
 	["UP",					menu_element_type.input,			"key_up",	vk_up],

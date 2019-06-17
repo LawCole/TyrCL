@@ -8,7 +8,7 @@ y += lengthdir_y(bullet_spd,mb_direction);
 y -= global.scroll_speed;
 //CHECK FOR COLLISION WITH PLAYER OR OUT OF BOUNDS
 
-var checkOOB = is_out_of_bounds(self);
+var checkOOB = is_out_of_bounds(self,32);
 //var player_collision = collision_point(Player.x,Player.y,Player,false,false);
 
 if checkOOB == true {

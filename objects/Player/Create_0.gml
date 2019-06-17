@@ -1,5 +1,7 @@
 /// @description set up player variables
 
+window_mouse_set(window_get_width()/2,window_get_height()*0.85);
+
 //MOVEMENT VARIALBES
 max_speed = 15;
 spd = 5;
@@ -7,6 +9,10 @@ acc = 0.5;
 fric = 0.25;
 hspd = 0;
 vspd = 0;
+
+//COLLISION WITH ENEMY VARIABLES
+speed_push = [0,0];
+mercy = 0;
 
 //SPRITE VARIABLES
 image_index = 2;

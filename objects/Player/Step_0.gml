@@ -1,6 +1,7 @@
 ///@description control the player's state
 get_input();
 script_execute(state);
+y -= global.scroll_speed;
 
 //CALCULATE % to draw bars
 armor_PC = (armor/max_armor)*100 ;
@@ -20,7 +21,7 @@ if (shift) || (middle_mouse) && (state != death_state) {
 
 if (attack_key) && (attackstate == 0) && (energy >= en_cost) {
 	fire_weapon()
-	attackstate = room_speed;
+	attackstate = 60;
 	energy -= en_cost * (1 + weapon_LV/11);
 	energy = clamp(energy,0,max_energy);
 	}
@@ -75,10 +76,16 @@ if damage_buffer > 0 {
 	regen_rate = ceil(regen_tick_rate*1.5);
 }
 
-if armor <= 0 { 
-	//DEATH
-	state = death_state;
+//pushback when colliding with enemy
+	if !place_meeting(x,y,Enemy_FLY) {
+		speed_push[0]=lerp(speed_push[0],0,.1);
+		speed_push[1]=lerp(speed_push[1],0,.1);
 	}
+
+//mercy invincibility after colliding
+if mercy > 0 {mercy -=1;}
+
+if armor <= 0 {state = death_state;}
 
 //SPRITE STUFF (for now)
 calculate_speed();

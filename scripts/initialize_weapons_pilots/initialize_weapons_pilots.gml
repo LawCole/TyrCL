@@ -88,13 +88,13 @@ reload_speed_multiplier = 0;
 base_damage = 10;
 damage_multiplier = 0;
 
-base_bullet_speed = 5 
+base_bullet_speed = 4; 
 bullet_speed_multiplier = 0;
 
 weapon_LV = 1;
-bullet_type = bullet_type.bubble;
-bullet_modifier1 = bullet_modifier1.none;
-bullet_modifier2 = bullet_modifier2.none;
-bullet_modifier3 = bullet_modifier3.speedup;
+bullet_type = global.bullettype;
+bullet_modifier1 = global.bulletMOD1;
+bullet_modifier2 = global.bulletMOD2;
+bullet_modifier3 = global.bulletMOD3;
 pilot_bonus = pilot_bonus.none;
 shop_multiplier = 0;

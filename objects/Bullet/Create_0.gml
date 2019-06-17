@@ -19,7 +19,7 @@ switch (Player.bullet_modifier3) {
 			bullet_max_speed = bullet_speed * 1.20;
 			bullet_min_speed = bullet_speed * 0.20;
 		bullet_speed = bullet_min_speed;
-		bullet_accel = 0.06;
+		bullet_accel = 0.03;
 	break;
 		case bullet_modifier3.slowdown:
 			bullet_max_damage = bullet_damage * 1.5;

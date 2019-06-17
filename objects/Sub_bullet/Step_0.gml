@@ -6,7 +6,7 @@ y += lengthdir_y(bullet_speed,bullet_angle);
 
 //OPTIMIZATION IDEA: maybe doesn't need to check OOB every step
 
-var checkOOB = is_out_of_bounds(self);
+var checkOOB = is_out_of_bounds(self,32);
 
 if checkOOB == true {
 	instance_destroy(self);
